@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    tools:context="apps.example.com.roomlivedatademo.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1">
+        <EditText
+            android:id="@+id/etTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Title"
+            android:lines="1"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/etBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|top"
+            android:hint="Body"
+            android:lines="5"
+            android:singleLine="false" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Total: 0" />
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add" />
+
+            <Button
+                android:id="@+id/btnDeleteAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete All" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvItems"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
