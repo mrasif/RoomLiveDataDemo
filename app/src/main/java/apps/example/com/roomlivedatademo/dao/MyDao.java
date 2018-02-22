@@ -24,6 +24,9 @@ public interface MyDao {
     @Query("DELETE FROM items")
     void deleteAll();
 
+    @Query("SELECT * FROM items WHERE id=:id")
+    Item getItem(long id);
+
     @Query("SELECT * FROM items")
     LiveData<List<Item>> getItems();
 

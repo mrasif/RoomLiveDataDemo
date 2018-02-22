@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Collections.reverse(items);
                 tvTotal.setText("Total: "+String.valueOf(items.size()));
                 rvItems.setLayoutManager(new LinearLayoutManager(MainActivity.this));
-                rvItems.setAdapter(new ItemAdapter(MainActivity.this,items));
+                rvItems.setAdapter(new ItemAdapter(MainActivity.this,db,items));
             }
         });
     }

@@ -6,4 +6,5 @@ package apps.example.com.roomlivedatademo.utils;
 
 public class AllKeys {
     public static final String DB_NAME = "my_items";
+    public static final java.lang.String TIME_STAMP_FORMAT = "YYYY-MM-DD HH:MM:SS.SSS";
 }
